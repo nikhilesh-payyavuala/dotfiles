@@ -90,8 +90,10 @@ zplug "b4b4r07/enhancd", use:init.sh
 # # Syntax highlighting for commands, load last
 zplug "zsh-users/zsh-syntax-highlighting", from:github, defer:3
 #
-zplug load --verbose
+zplug load
 autoload -Uz promptinit
   prompt pure
 
+alias gda='gdb attach'
+alias c='clear'
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
